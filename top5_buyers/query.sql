@@ -3,12 +3,13 @@ SELECT
     f.FirstName,
     f.LastName,
     f.Address,
-    MAX(c.BillingAddress) AS BillingAddress,
-    MAX(c.Total) AS Total
+    SUM(c.Total) AS TotalPurchases
 FROM customer f
 LEFT JOIN invoice c ON f.CustomerId = c.CustomerId
 GROUP BY f.CustomerId, f.FirstName, f.LastName, f.Address
-order by total desc
+ORDER BY TotalPurchases DESC
+LIMIT 5;
+
 
 /* top 5 
 1.Helena Holy - 25.86
