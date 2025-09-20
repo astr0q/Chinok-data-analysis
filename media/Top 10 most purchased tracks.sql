@@ -14,4 +14,4 @@ JOIN Genre ge
 join mediatype me on tr.MediaTypeId = me.MediaTypeId
 group by tr.TrackId, tr.Name, tr.AlbumId, tr.GenreId, tr.Composer
 order by TotalSold desc
-
+limit 10
