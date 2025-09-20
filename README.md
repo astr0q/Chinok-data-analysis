@@ -37,4 +37,4 @@ The goal is to practice common SQL operations, including joins, aggregations, gr
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/chinook-sql-exercises.git
+   git clone https://github.com/astr0q/chinook-sql-exercises.git
