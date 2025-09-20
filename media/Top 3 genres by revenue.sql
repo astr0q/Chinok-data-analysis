@@ -8,4 +8,4 @@ join genre ge on tr.GenreId = ge.GenreId
 join invoiceline il on tr.TrackId = il.TrackId
 group by ge.Name
 order by revenue desc
-
+limit 3
